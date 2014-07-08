@@ -1,0 +1,333 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Offer Sheet Form</title>
+<link rel="stylesheet" type="text/css" href="style.css" />
+<script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript" src="ddaccordion.js"></script>
+<script type="text/javascript">
+ddaccordion.init({
+	headerclass: "submenuheader", //Shared CSS class name of headers group
+	contentclass: "submenu", //Shared CSS class name of contents group
+	revealtype: "click", //Reveal content when user clicks or onmouseover the header? Valid value: "click", "clickgo", or "mouseover"
+	mouseoverdelay: 200, //if revealtype="mouseover", set delay in milliseconds before header expands onMouseover
+	collapseprev: true, //Collapse previous content (so only one open at any time)? true/false 
+	defaultexpanded: [], //index of content(s) open by default [index1, index2, etc] [] denotes no content
+	onemustopen: false, //Specify whether at least one header should be open always (so never all headers closed)
+	animatedefault: false, //Should contents open by default be animated into view?
+	persiststate: true, //persist state of opened contents within browser session?
+	toggleclass: ["", ""], //Two CSS classes to be applied to the header when it's collapsed and expanded, respectively ["class1", "class2"]
+	togglehtml: ["suffix", "<img src='images/plus.gif' class='statusicon' />", "<img src='images/minus.gif' class='statusicon' />"], //Additional HTML added to the header when it's collapsed and expanded, respectively  ["position", "html1", "html2"] (see docs)
+	animatespeed: "fast", //speed of animation: integer in milliseconds (ie: 200), or keywords "fast", "normal", or "slow"
+	oninit:function(headers, expandedindices){ //custom code to run when headers have initalized
+		//do nothing
+	},
+	onopenclose:function(header, index, state, isuseractivated){ //custom code to run whenever a header is opened or closed
+		//do nothing
+	}
+})
+</script>
+<script src="jquery.jclock-1.2.0.js.txt" type="text/javascript"></script>
+<script type="text/javascript" src="jconfirmaction.jquery.js"></script>
+<script type="text/javascript">
+	
+	$(document).ready(function() {
+		$('.ask').jConfirmAction();
+	});
+	
+</script>
+<script type="text/javascript">
+$(function($) {
+    $('.jclock').jclock();
+});
+</script>
+
+<script language="javascript" type="text/javascript" src="niceforms.js"></script>
+<link rel="stylesheet" type="text/css" media="all" href="niceforms-default.css" />
+
+</head>
+<body>
+<div id="main_container">
+
+	<div class="header">
+    <div class="logo"><a href="#"><img src="images/logo.png" alt="" title="" border="0" /></a></div>
+    
+    <div class="right_header">Welcome Admin</a></div>
+    <div class="jclock"></div>
+    </div>
+    
+    <div class="main_content">
+    
+                    <div class="menu">
+                    <ul>
+                    <li><a href="index.html">Admin Home</a></li>
+                    <li><a href="list.html">Model</a>
+                        <ul>
+                        <li><a href="" title="">Add New Item Model</a></li>
+                        <li><a href="" title="">View All Item Model</a></li>
+                        </ul>
+                    <!--[if lte IE 6]></td></tr></table></a><![endif]-->
+                    </li>
+                    <li><a href="login.html">Parts</a>
+                        <ul>
+                        <li><a href="" title="">Add New Item Part</a></li>
+                        <li><a href="" title="">View All Item Part</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="login.html">Client Profile</a>
+                        <ul>
+                        <li><a href="" title="">Add New Client</a></li>
+                        <li><a href="" title="">View All Client</a></li>
+                        </ul>
+                    </li>
+					<li><a href="">Inventory</a></li>
+                    <li><a href="">Invoice</a></li>
+                    <li><a href="">Purchase Order</a></li>
+                    <li><a class="" href="">Reports<!--[if IE 7]><!--></a><!--<![endif]-->
+                    <!--[if lte IE 6]><table><tr><td><![endif]-->
+                        <ul>
+                        <li><a href="" title="">Inventory List Reports</a></li>
+                        <li><a href="" title="">Invoice List Reports</a></li>
+						<li><a href="" title="">Stock Transfer Reports</a></li>
+                        <li><a class="sub1" href="" title="">Product Analysis Reports<!--[if IE 7]><!--></a><!--<![endif]-->
+                            <ul>
+                                <li><a href="" title="">FSN Analysis</a></li>
+                                <li><a href="" title="">ABC Analysis</a></li>
+                                <li><a href="" title="">DEF Analysis</a></li>
+                            </ul>
+                        </li>
+                        </ul>
+                    <!--[if lte IE 6]></td></tr></table></a><![endif]-->
+                    </li>
+                    <li><a href="list.html">Account Settings<!--[if IE 7]><!--></a><!--<![endif]-->
+                    <!--[if lte IE 6]><table><tr><td><![endif]-->
+                        <ul>
+                        <li><a href="" title="">View Account</a></li>
+                        <li><a href="" title="">Update Account</a></li>
+                        <li><a href="" title="">Deactivate</a></li>
+                        </ul>
+                    <!--[if lte IE 6]></td></tr></table></a><![endif]-->
+                    </li>
+                    <li><a href="">Logout</a></li>
+                    </ul>
+                    </div> 
+                    
+                    
+                    
+                    
+    <div class="center_content">  
+    
+    
+    
+    <div class="left_content">
+    
+    		<div class="sidebar_search">
+            <form>
+            <input type="text" name="" class="search_input" value="search keyword" onclick="this.value=''" />
+            <input type="image" class="search_submit" src="images/search.png" />
+            </form>            
+            </div>
+    
+            <div class="sidebarmenu">
+            
+                <a class="menuitem submenuheader" href="">Offer Sheet</a>
+                <div class="submenu">
+                    <ul>
+                    <li><a href="">Create Offer Sheet</a></li>
+                    </ul>
+                </div>
+                <a class="menuitem submenuheader" href="" >Purchase Order</a>
+                <div class="submenu">
+                    <ul>
+                    <li><a href="">View Purchase Order</a></li>
+                    <li><a href="">Delete Purchase Orders</a></li>
+                    </ul>
+                </div>
+                <a class="menuitem submenuheader" href="">Inventory Management</a>
+                <div class="submenu">
+                    <ul>
+					<li><a href="">View Inventory</a></li>
+                    </ul>
+                </div>
+                <a class="menuitem submenuheader" href="">Invoice Management</a>
+                <div class="submenu">
+                    <ul>
+                    <li><a href="">Create Invoice Statement</a></li>
+                    <li><a href="">Print Invoice Statement</a></li>
+					<li><a href="">View All Invoice Statements</a></li>
+                    </ul>
+                </div>
+                <a class="menuitem submenuheader" href="">Users Management</a>
+                <div class="submenu">
+                    <ul>
+                    <li><a href="">Create New User</a></li>
+                    <li><a href="">View All Users</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            
+
+            
+
+              
+    
+    </div>  
+    
+    <div class="right_content">
+        
+    <h2>Offer Sheet Form</h2> 
+	<table width="650">
+			<tr>
+			<th align="left" class="rounded-foot-left">Company Name:</th>
+			<td align="left">Del Monte Corp</td>
+			<th align="left">Offer Sheet No:</th>
+			<td align="left">2012-0615</td>
+			</tr>
+			<tr>
+			<th align="left">Address:</th>
+			<td>1234 Maligaya St., Manila City</td>
+			<th align="left">Terms of Payment:</th>
+			<td>40 Days</td>
+			</tr>
+			<tr>
+			<th align="left">Contact Person:</th>
+			<td>Juan Dela Cruz</td>
+			<th align="left">Time of Shipment:</th>
+			<td>40 Days</td>
+			</tr>
+			<tr>
+			<th align="left">Contact Number:</th>
+			<td>1234567890</td>
+			<th align="left">Place of Delivery:</th>
+			<td>Manila</td>
+			<tr>
+			<th></th>
+			<td></td>
+			<th align="left">Validity:</th>
+			<td>One Week</td>
+			</tr>
+			</tr>
+	</table>
+	</br>
+<table id="rounded-corner" summary="2007 Major IT Companies' Profit">
+    <thead>
+    	<tr>
+        	<th scope="col" class="rounded-company"></th>
+            <th scope="col" class="rounded">Product Name</th>
+            <th scope="col" class="rounded">Model</th>
+            <th scope="col" class="rounded">Part</th>
+            <th scope="col" class="rounded">Tax Code</th>
+            <th scope="col" class="rounded">Price</th>
+			<th scope="col" class="rounded">Total Amount</th>
+			<th scope="col" class="rounded">Quantity</th>
+            <th scope="col" class="rounded">Edit</th>
+            <th scope="col" class="rounded-q4">Delete</th>
+        </tr>
+    </thead>
+        <tfoot>
+    	<tr>
+			<td></td>
+        	<td colspan="2" class="rounded-foot-left"><em><input type="text" name="" class="search_input" value="Enter product name" onclick="this.value=''" /><input type="image" class="search_submit" src="images/search.png" /></em></td>
+        	<td></td>
+			<td></td>
+			<td><b>Total:</b></td>
+			<td><b>$7500 pcs</b></td>
+			<td><b>50 pcs</b></td>
+			<td></td>
+			<td class="rounded-foot-right">&nbsp;</td>
+
+        </tr>
+    </tfoot>
+    <tbody>
+    	<tr>
+        	<td><input type="checkbox" name="" /></td>
+            <td><u>Needle</u></td>
+            <td>details</td>
+            <td>details</td>
+			<td>Tax</td>
+            <td>$150</td>
+            <td>$1500</td>
+			<td>10</td>
+            <td><a href="#"><img src="images/user_edit.png" alt="" title="" border="0" /></a></td>
+            <td><a href="#" class="ask"><img src="images/trash.png" alt="" title="" border="0" /></a></td>
+        </tr>
+        
+    	<tr>
+        	<td><input type="checkbox" name="" /></td>
+            <td><u>Screw</u></td>
+            <td>details</td>
+            <td>details</td>
+			<td>Tax</td>
+            <td>$150</td>
+            <td>$1500</td>
+			<td>10</td>
+            <td><a href="#"><img src="images/user_edit.png" alt="" title="" border="0" /></a></td>
+            <td><a href="#" class="ask"><img src="images/trash.png" alt="" title="" border="0" /></a></td>
+        </tr> 
+        
+    	<tr>
+        	<td><input type="checkbox" name="" /></td>
+            <td><u>Sewing Machine</u></td>
+            <td>details</td>
+            <td>details</td>
+			<td>Tax</td>
+            <td>$150</td>
+            <td>$1500</td>
+			<td>10</td>
+            <td><a href="#"><img src="images/user_edit.png" alt="" title="" border="0" /></a></td>
+            <td><a href="#" class="ask"><img src="images/trash.png" alt="" title="" border="0" /></a></td>
+        </tr>
+        
+    	<tr>
+        	<td><input type="checkbox" name="" /></td>
+            <td><u>Bagging Machine</u></td>
+            <td>details</td>
+            <td>details</td>
+			<td>Tax</td>
+            <td>$150</td>
+            <td>$1500</td>
+			<td>10</td>
+            <td><a href="#"><img src="images/user_edit.png" alt="" title="" border="0" /></a></td>
+            <td><a href="#" class="ask"><img src="images/trash.png" alt="" title="" border="0" /></a></td>
+        </tr>  
+    	<tr>
+        	<td><input type="checkbox" name="" /></td>
+            <td><u>Pin</u></td>
+            <td>details</td>
+            <td>details</td>
+			<td>Tax</td>
+            <td>$150</td>
+            <td>$1500</td>
+			<td>10</td>
+            <td><a href="#"><img src="images/user_edit.png" alt="" title="" border="0" /></a></td>
+            <td><a href="#" class="ask"><img src="images/trash.png" alt="" title="" border="0" /></a></td>
+        </tr>
+        
+    </tbody>
+</table>
+	
+	 <a href="#" class="bt_red"><span class="bt_red_lft"></span><strong>Cancel Offer Sheet</strong><span class="bt_red_r"></span></a> 
+	 <a href="#" class="bt_green"><span class="bt_green_lft"></span><strong>Send E-Mail</strong><span class="bt_green_r"></span></a>
+     <a href="#" class="bt_blue"><span class="bt_blue_lft"></span><strong>Save Offer Sheet</strong><span class="bt_blue_r"></span></a>
+     
+     
+		
+     </div><!-- end of right content-->
+            
+                    
+  </div>   <!--end of center content -->               
+                    
+
+    <div class="clear"></div>
+    </div> <!--end of main content-->
+	
+    
+    <div class="footer">
+    
+    </div>
+	
+</div>		
+</body>
+</html>

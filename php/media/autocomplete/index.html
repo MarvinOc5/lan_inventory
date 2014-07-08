@@ -1,0 +1,70 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>jQuery AutoComplete tutorial using multiple input boxes</title>
+
+    <style type="text/css" title="currentStyle">
+                @import "css/layout-styles.css";
+                @import "css/themes/smoothness/jquery-ui-1.8.4.custom.css";
+    </style>
+
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+
+    <!-- jQuery libs -->
+    <script  type="text/javascript" src="js/jquery-1.6.1.min.js"></script>
+    <script  type="text/javascript" src="js/jquery-ui-1.8.14.custom.min.js"></script>
+
+    <!-- Our jQuery Script to make everything work -->
+    <script  type="text/javascript" src="js/jq-ac-script.js"></script>
+
+
+</head>
+<body>
+
+<div id="container">
+
+        <div class="panel">
+            <div class="title-large">
+                <div class="theme"></div>
+            </div>
+
+                <div class="content inpad">
+
+                    <div id="messageBox" style="margin-left:15px; padding-left:20px; padding-bottom:5px; border:1px #ccc solid; display:none;"></div>
+
+                            <form action="" id="itemsForm">
+
+                                <table id="itemsTable" class="general-table">
+                                    <thead>
+                                    <tr>
+                                        <th></th>
+                                        <th>Item Code</th>
+                                        <th>Item Description</th>
+                                        <th>Item Qty</th>
+                                        <th>Item Price</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="item-row">
+                                            <td></td>
+                                            <td><input name="itemCode[]" value="" class="tInput" id="itemCode" tabindex="1"/> </td>
+                                            <td><input name="itemDesc[]" value="" class="tInput" id="itemDesc"  readonly="readonly" /></td>
+                                            <td><input name="itemQty[]" value="" class="tInput" id="itemQty" tabindex="2"/></td>
+                                            <td><input name="itemPrice[]" value="" class="tInput" id="itemPrice" readonly="readonly" /> </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                            </form>
+
+                            <a href="#" id="addRow" class="button-clean large"><span> <img src="images/icon-plus.png" alt="Add" title="Add Row" /> Add Item</span></a>
+
+                        </div>
+ 
+
+                </div>
+        </div>
+
+</body>
+</html>

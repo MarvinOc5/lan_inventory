@@ -1,0 +1,47 @@
+
+    /* Autocomplete menu list font-size override */
+    li.ui-menu-item  { font-size: .75em; }
+
+	/*
+	**** Panel - General ***************************************
+	*/
+
+    /* Table Data Styles */
+    .general-table {
+		margin:0px;
+		width:600px;
+		text-align: left;
+		border-collapse: collapse;
+		}	
+    .general-table th {
+		padding: 8px;
+		font-weight: normal;
+		font-size: 13px;
+		color: #fff;
+		background: #0a75af;
+		}
+	.general-table td {
+		padding: 8px;
+		background: #ecf8fd;
+		border-top: 1px solid #fff;
+		color: #669;}
+
+	.general-table tbody tr:hover td {
+		background: #d2e7f0;
+		}
+
+
+    .general-table input                            { font-size:12px;border: none; padding: 2px; margin: 2px; width:100px; }
+    .general-table #itemDesc                        { width:165px; background:none; color:#0000A0; }
+	.general-table #itemQty                        { width:165px; background:none; color:#0000A0; }
+	.general-table #itemPrice                       { border: 1px solid #ccc; width:100px;  }
+	.general-table #Total                      { border: 1px solid #ccc; width:100px; }
+    .general-table #rate                       { width:125px; background:none; color:#0000A0; }
+	.general-table #itemName                        { width:125px; background:none; color:#999; }
+    .general-table #qtyOnHand                       { width:35px; background:none; color:#999; }
+    .general-table #tQty                            { width:35px; border: 1px solid #ccc; }
+    .general-table #itemCode                        { border: 1px solid #ccc; width:60px; }
+	.general-table #qty		                      { border: 1px solid #ccc; width:100px; }
+	.general-table #vat		                      { border: 1px solid #ccc; width:100px; }
+	.general-table #dsc		                      { border: 1px solid #ccc; width:100px; }
+   
